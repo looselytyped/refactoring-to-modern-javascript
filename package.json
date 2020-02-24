@@ -1,0 +1,36 @@
+{
+  "name": "refactoring-to-modern-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Raju Gandhi <raju.gandhi@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint \"**/*.js\" \"**/*.test.js\"",
+    "test": "jest --verbose",
+    "test:update": "jest --verbose --coverage --updateSnapshot",
+    "test:watch": "jest --verbose --watch",
+    "coverage": "jest --verbose --coverage && open ./coverage/lcov-report/index.html",
+    "todo": "todo-viewer \"**/*.js\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.8.0",
+    "@babel/preset-env": "^7.7.7",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.3.0",
+    "jest": "^24.9.0",
+    "todo-viewer": "^1.0.9"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.8.0",
+    "json-server": "^0.15.1",
+    "moment": "^2.24.0"
+  }
+}
