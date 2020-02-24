@@ -1,0 +1,966 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Car/Auto"
+    },
+    {
+      "id": 2,
+      "name": "Debt"
+    },
+    {
+      "id": 3,
+      "name": "Departmental"
+    },
+    {
+      "id": 4,
+      "name": "Entertainment"
+    },
+    {
+      "id": 5,
+      "name": "Food/Groceries"
+    },
+    {
+      "id": 6,
+      "name": "Home"
+    },
+    {
+      "id": 7,
+      "name": "Insurance/Medical"
+    },
+    {
+      "id": 8,
+      "name": "Misc/One-time"
+    },
+    {
+      "id": 9,
+      "name": "Utilities"
+    }
+  ],
+  "subCategories": [
+    {
+      "id": 1,
+      "name": "Gasoline",
+      "fk_category_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Oil Change",
+      "fk_category_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Maintenance",
+      "fk_category_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Auto Loan",
+      "fk_category_id": 1
+    },
+    {
+      "id": 5,
+      "name": "Student Loan",
+      "fk_category_id": 2
+    },
+    {
+      "id": 6,
+      "name": "Clothing",
+      "fk_category_id": 3
+    },
+    {
+      "id": 7,
+      "name": "Personal Items",
+      "fk_category_id": 3
+    },
+    {
+      "id": 8,
+      "name": "Pets",
+      "fk_category_id": 3
+    },
+    {
+      "id": 9,
+      "name": "Haircuts",
+      "fk_category_id": 3
+    },
+    {
+      "id": 10,
+      "name": "Software",
+      "fk_category_id": 3
+    },
+    {
+      "id": 11,
+      "name": "Movies",
+      "fk_category_id": 4
+    },
+    {
+      "id": 12,
+      "name": "Misc Events",
+      "fk_category_id": 4
+    },
+    {
+      "id": 13,
+      "name": "Groceries",
+      "fk_category_id": 5
+    },
+    {
+      "id": 14,
+      "name": "Restaurant/Fast Food",
+      "fk_category_id": 5
+    },
+    {
+      "id": 15,
+      "name": "Mortgage",
+      "fk_category_id": 6
+    },
+    {
+      "id": 16,
+      "name": "Maintenance",
+      "fk_category_id": 6
+    },
+    {
+      "id": 17,
+      "name": "Insurance - Auto",
+      "fk_category_id": 7
+    },
+    {
+      "id": 18,
+      "name": "Gifts",
+      "fk_category_id": 8
+    },
+    {
+      "id": 19,
+      "name": "Misc",
+      "fk_category_id": 8
+    },
+    {
+      "id": 20,
+      "name": "Electricity",
+      "fk_category_id": 9
+    },
+    {
+      "id": 21,
+      "name": "Gas/Heating",
+      "fk_category_id": 9
+    },
+    {
+      "id": 22,
+      "name": "CellPhone",
+      "fk_category_id": 9
+    },
+    {
+      "id": 23,
+      "name": "Internet",
+      "fk_category_id": 9
+    },
+    {
+      "id": 24,
+      "name": "Water",
+      "fk_category_id": 9
+    }
+  ],
+  "payees": [
+    {
+      "id": 1,
+      "name": "AEP Ohio"
+    },
+    {
+      "id": 2,
+      "name": "Amazon"
+    },
+    {
+      "id": 3,
+      "name": "Amul India Restaurant"
+    },
+    {
+      "id": 4,
+      "name": "AT&T"
+    },
+    {
+      "id": 5,
+      "name": "Barnes And Noble"
+    },
+    {
+      "id": 6,
+      "name": "Bed Bath & Beyond"
+    },
+    {
+      "id": 7,
+      "name": "Bexley Co-Op"
+    },
+    {
+      "id": 8,
+      "name": "Bexley Water"
+    },
+    {
+      "id": 9,
+      "name": "Billy Lees"
+    },
+    {
+      "id": 10,
+      "name": "Car Wash"
+    },
+    {
+      "id": 11,
+      "name": "Carfagnas"
+    },
+    {
+      "id": 12,
+      "name": "Chase Mortgage"
+    },
+    {
+      "id": 13,
+      "name": "Chipotle"
+    },
+    {
+      "id": 14,
+      "name": "City Bbq"
+    },
+    {
+      "id": 15,
+      "name": "Ck Nails"
+    },
+    {
+      "id": 16,
+      "name": "College Loan"
+    },
+    {
+      "id": 17,
+      "name": "Columbia Gas"
+    },
+    {
+      "id": 18,
+      "name": "Costco"
+    },
+    {
+      "id": 19,
+      "name": "CVS"
+    },
+    {
+      "id": 20,
+      "name": "Eagle Cleaners"
+    },
+    {
+      "id": 21,
+      "name": "El Vaquero"
+    },
+    {
+      "id": 22,
+      "name": "Fedex"
+    },
+    {
+      "id": 23,
+      "name": "First Watch"
+    },
+    {
+      "id": 24,
+      "name": "Foot Locker"
+    },
+    {
+      "id": 25,
+      "name": "Giant Eagle"
+    },
+    {
+      "id": 26,
+      "name": "Goodwill"
+    },
+    {
+      "id": 27,
+      "name": "Great Clips"
+    },
+    {
+      "id": 28,
+      "name": "Kemba"
+    },
+    {
+      "id": 29,
+      "name": "Kroger"
+    },
+    {
+      "id": 30,
+      "name": "Lavash"
+    },
+    {
+      "id": 31,
+      "name": "Liberty Mutual"
+    },
+    {
+      "id": 32,
+      "name": "Lowes"
+    },
+    {
+      "id": 33,
+      "name": "Luckys Market"
+    },
+    {
+      "id": 34,
+      "name": "Lunar Pages"
+    },
+    {
+      "id": 35,
+      "name": "Mad Greek"
+    },
+    {
+      "id": 36,
+      "name": "Marcellas"
+    },
+    {
+      "id": 37,
+      "name": "Mcdonalds"
+    },
+    {
+      "id": 38,
+      "name": "Mellow Mushroom"
+    },
+    {
+      "id": 39,
+      "name": "Mrs Goodmans"
+    },
+    {
+      "id": 40,
+      "name": "Music And Arts"
+    },
+    {
+      "id": 41,
+      "name": "Netflix"
+    },
+    {
+      "id": 42,
+      "name": "Ohio BMV"
+    },
+    {
+      "id": 43,
+      "name": "Osu"
+    },
+    {
+      "id": 44,
+      "name": "Panera"
+    },
+    {
+      "id": 45,
+      "name": "Patel Brothers"
+    },
+    {
+      "id": 46,
+      "name": "Peppridge Farm"
+    },
+    {
+      "id": 47,
+      "name": "Pet People"
+    },
+    {
+      "id": 48,
+      "name": "Piada"
+    },
+    {
+      "id": 49,
+      "name": "Red Maple Vet"
+    },
+    {
+      "id": 50,
+      "name": "Rpac Osu"
+    },
+    {
+      "id": 51,
+      "name": "Skype"
+    },
+    {
+      "id": 52,
+      "name": "Spectrum"
+    },
+    {
+      "id": 53,
+      "name": "Speedway"
+    },
+    {
+      "id": 54,
+      "name": "Sunoco"
+    },
+    {
+      "id": 55,
+      "name": "Tadka"
+    },
+    {
+      "id": 56,
+      "name": "TJ Maxx"
+    },
+    {
+      "id": 57,
+      "name": "Tlc Grooming"
+    },
+    {
+      "id": 58,
+      "name": "Trader Joes"
+    },
+    {
+      "id": 59,
+      "name": "Weilands"
+    },
+    {
+      "id": 60,
+      "name": "Zoo"
+    }
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 9,
+      "subcategory_id": 24,
+      "amount": 1250,
+      "payee_id": 8,
+      "notes": "This is test notes"
+    },
+    {
+      "id": 2,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 6,
+      "subcategory_id": 15,
+      "amount": 1813,
+      "payee_id": 12,
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 9,
+      "subcategory_id": 20,
+      "amount": 226.55,
+      "payee_id": 17,
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 3,
+      "subcategory_id": 9,
+      "amount": 17,
+      "payee_id": 27,
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 1,
+      "subcategory_id": 4,
+      "amount": 325,
+      "payee_id": 28,
+      "notes": ""
+    },
+    {
+      "id": 6,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 7,
+      "subcategory_id": 17,
+      "amount": 125,
+      "payee_id": 31,
+      "notes": ""
+    },
+    {
+      "id": 7,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 8,
+      "subcategory_id": 18,
+      "amount": 320,
+      "payee_id": 40,
+      "notes": ""
+    },
+    {
+      "id": 8,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 9,
+      "subcategory_id": 20,
+      "amount": 10.74,
+      "payee_id": 41,
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 3,
+      "subcategory_id": 6,
+      "amount": 25,
+      "payee_id": 50,
+      "notes": ""
+    },
+    {
+      "id": 10,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 9,
+      "subcategory_id": 23,
+      "amount": 3,
+      "payee_id": 51,
+      "notes": ""
+    },
+    {
+      "id": 11,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 9,
+      "subcategory_id": 23,
+      "amount": 90,
+      "payee_id": 52,
+      "notes": ""
+    },
+    {
+      "id": 12,
+      "date": "2020-01-01",
+      "date": "2020-02-01",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 12,
+      "payee_id": 53,
+      "notes": ""
+    },
+    {
+      "id": 13,
+      "date": "2020-01-02",
+      "date": "2020-02-02",
+      "category_id": 2,
+      "subcategory_id": 5,
+      "amount": 0,
+      "payee_id": 16,
+      "notes": ""
+    },
+    {
+      "id": 14,
+      "date": "2020-01-02",
+      "date": "2020-02-02",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 252,
+      "payee_id": 18,
+      "notes": ""
+    },
+    {
+      "id": 15,
+      "date": "2020-01-02",
+      "date": "2020-02-02",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 23.16,
+      "payee_id": 19,
+      "notes": ""
+    },
+    {
+      "id": 16,
+      "date": "2020-01-02",
+      "date": "2020-02-02",
+      "category_id": 5,
+      "subcategory_id": 14,
+      "amount": 100,
+      "payee_id": 36,
+      "notes": ""
+    },
+    {
+      "id": 17,
+      "date": "2020-01-02",
+      "date": "2020-02-02",
+      "category_id": 3,
+      "subcategory_id": 8,
+      "amount": 124,
+      "payee_id": 47,
+      "notes": ""
+    },
+    {
+      "id": 18,
+      "date": "2020-01-02",
+      "date": "2020-02-02",
+      "category_id": 3,
+      "subcategory_id": 6,
+      "amount": 45,
+      "payee_id": 18,
+      "notes": ""
+    },
+    {
+      "id": 19,
+      "date": "2020-01-02",
+      "date": "2020-02-02",
+      "category_id": 8,
+      "subcategory_id": 19,
+      "amount": 7.6,
+      "payee_id": 60,
+      "notes": ""
+    },
+    {
+      "id": 20,
+      "date": "2020-01-05",
+      "date": "2020-02-05",
+      "category_id": 9,
+      "subcategory_id": 22,
+      "amount": 225,
+      "payee_id": 4,
+      "notes": "First bill and Jan "
+    },
+    {
+      "id": 21,
+      "date": "2020-01-05",
+      "date": "2020-02-05",
+      "category_id": 5,
+      "subcategory_id": 14,
+      "amount": 18,
+      "payee_id": 13,
+      "notes": ""
+    },
+    {
+      "id": 22,
+      "date": "2020-01-06",
+      "date": "2020-02-06",
+      "category_id": 1,
+      "subcategory_id": 1,
+      "amount": 24.83,
+      "payee_id": 25,
+      "notes": ""
+    },
+    {
+      "id": 23,
+      "date": "2020-01-06",
+      "date": "2020-02-06",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 35.64,
+      "payee_id": 25,
+      "notes": ""
+    },
+    {
+      "id": 24,
+      "date": "2020-01-06",
+      "date": "2020-02-06",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 68.91,
+      "payee_id": 45,
+      "notes": ""
+    },
+    {
+      "id": 25,
+      "date": "2020-01-07",
+      "date": "2020-02-07",
+      "category_id": 3,
+      "subcategory_id": 8,
+      "amount": 30,
+      "payee_id": 47,
+      "notes": ""
+    },
+    {
+      "id": 26,
+      "date": "2020-01-08",
+      "date": "2020-02-08",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 19.98,
+      "payee_id": 7,
+      "notes": ""
+    },
+    {
+      "id": 27,
+      "date": "2020-01-09",
+      "date": "2020-02-09",
+      "category_id": 6,
+      "subcategory_id": 16,
+      "amount": 100,
+      "payee_id": 20,
+      "notes": ""
+    },
+    {
+      "id": 28,
+      "date": "2020-01-13",
+      "date": "2020-02-13",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 123.47,
+      "payee_id": 29,
+      "notes": ""
+    },
+    {
+      "id": 29,
+      "date": "2020-01-14",
+      "date": "2020-02-14",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 53.94,
+      "payee_id": 25,
+      "notes": ""
+    },
+    {
+      "id": 30,
+      "date": "2020-01-15",
+      "date": "2020-02-15",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 21.07,
+      "payee_id": 23,
+      "notes": ""
+    },
+    {
+      "id": 31,
+      "date": "2020-01-15",
+      "date": "2020-02-15",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 25,
+      "payee_id": 53,
+      "notes": ""
+    },
+    {
+      "id": 32,
+      "date": "2020-01-16",
+      "date": "2020-02-16",
+      "category_id": 1,
+      "subcategory_id": 2,
+      "amount": 30.04,
+      "payee_id": 25,
+      "notes": ""
+    },
+    {
+      "id": 33,
+      "date": "2020-01-16",
+      "date": "2020-02-16",
+      "category_id": 5,
+      "subcategory_id": 14,
+      "amount": 10,
+      "payee_id": 21,
+      "notes": ""
+    },
+    {
+      "id": 34,
+      "date": "2020-01-18",
+      "date": "2020-02-18",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 26.97,
+      "payee_id": 7,
+      "notes": ""
+    },
+    {
+      "id": 35,
+      "date": "2020-01-19",
+      "date": "2020-02-19",
+      "category_id": 5,
+      "subcategory_id": 14,
+      "amount": 30,
+      "payee_id": 19,
+      "notes": ""
+    },
+    {
+      "id": 36,
+      "date": "2020-01-19",
+      "date": "2020-02-19",
+      "category_id": 3,
+      "subcategory_id": 8,
+      "amount": 58,
+      "payee_id": 49,
+      "notes": ""
+    },
+    {
+      "id": 37,
+      "date": "2020-01-21",
+      "date": "2020-02-21",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 65,
+      "payee_id": 25,
+      "notes": ""
+    },
+    {
+      "id": 38,
+      "date": "2020-01-22",
+      "date": "2020-02-22",
+      "category_id": 1,
+      "subcategory_id": 16,
+      "amount": 105.91,
+      "payee_id": 42,
+      "notes": "Renew THE MTRX"
+    },
+    {
+      "id": 39,
+      "date": "2020-01-23",
+      "date": "2020-02-23",
+      "category_id": 9,
+      "subcategory_id": 22,
+      "amount": 0,
+      "payee_id": 4,
+      "notes": ""
+    },
+    {
+      "id": 40,
+      "date": "2020-01-23",
+      "date": "2020-02-23",
+      "category_id": 5,
+      "subcategory_id": 14,
+      "amount": 38,
+      "payee_id": 35,
+      "notes": ""
+    },
+    {
+      "id": 41,
+      "date": "2020-01-24",
+      "date": "2020-02-24",
+      "category_id": 3,
+      "subcategory_id": 6,
+      "amount": 38,
+      "payee_id": 2,
+      "notes": ""
+    },
+    {
+      "id": 42,
+      "date": "2020-01-25",
+      "date": "2020-02-25",
+      "category_id": 1,
+      "subcategory_id": 1,
+      "amount": 31.5,
+      "payee_id": 53,
+      "notes": ""
+    },
+    {
+      "id": 43,
+      "date": "2020-01-26",
+      "date": "2020-02-26",
+      "category_id": 9,
+      "subcategory_id": 20,
+      "amount": 162.76,
+      "payee_id": 1,
+      "notes": ""
+    },
+    {
+      "id": 44,
+      "date": "2020-01-27",
+      "date": "2020-02-27",
+      "category_id": 6,
+      "subcategory_id": 16,
+      "amount": 26.87,
+      "payee_id": 32,
+      "notes": ""
+    },
+    {
+      "id": 45,
+      "date": "2020-01-28",
+      "date": "2020-02-28",
+      "category_id": 3,
+      "subcategory_id": 6,
+      "amount": 16,
+      "payee_id": 6,
+      "notes": ""
+    },
+    {
+      "id": 46,
+      "date": "2020-01-28",
+      "date": "2020-02-28",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 120,
+      "payee_id": 29,
+      "notes": ""
+    },
+    {
+      "id": 47,
+      "date": "2020-01-28",
+      "date": "2020-02-28",
+      "category_id": 3,
+      "subcategory_id": 8,
+      "amount": 52,
+      "payee_id": 47,
+      "notes": ""
+    },
+    {
+      "id": 48,
+      "date": "2020-01-28",
+      "date": "2020-02-28",
+      "category_id": 5,
+      "subcategory_id": 13,
+      "amount": 9,
+      "payee_id": 29,
+      "notes": ""
+    },
+    {
+      "id": 49,
+      "date": "2020-01-31",
+      "date": "2020-02-31",
+      "category_id": 3,
+      "subcategory_id": 6,
+      "amount": 52,
+      "payee_id": 2,
+      "notes": "Bought a standing desk"
+    },
+    {
+      "id": 50,
+      "date": "2020-01-31",
+      "date": "2020-02-31",
+      "category_id": 8,
+      "subcategory_id": 19,
+      "amount": 60,
+      "payee_id": 34,
+      "notes": ""
+    },
+    {
+      "date": "2020-01-30",
+      "date": "2020-02-30",
+      "category_id": 1,
+      "subcategory_id": 1,
+      "amount": 1230,
+      "payee_id": 1,
+      "notes": "",
+      "id": 51
+    },
+    {
+      "date": "2020-01-30",
+      "date": "2020-02-30",
+      "category_id": 3,
+      "subcategory_id": 6,
+      "amount": 134,
+      "payee_id": 2,
+      "notes": "",
+      "id": 52
+    },
+    {
+      "date": "2020-01-30",
+      "date": "2020-02-30",
+      "category_id": 2,
+      "subcategory_id": 5,
+      "amount": 400,
+      "payee_id": 3,
+      "notes": "Student Debt",
+      "id": 53
+    },
+    {
+      "date": "2020-01-23",
+      "date": "2020-02-23",
+      "category_id": 6,
+      "subcategory_id": 16,
+      "amount": 100,
+      "payee_id": 20,
+      "notes": "",
+      "id": 54
+    },
+    {
+      "date": "2020-01-24",
+      "date": "2020-02-24",
+      "category_id": 1,
+      "subcategory_id": 1,
+      "amount": 100,
+      "payee_id": 53,
+      "notes": "",
+      "id": 55
+    },
+    {
+      "date": "2020-01-24",
+      "date": "2020-02-24",
+      "category_id": 1,
+      "subcategory_id": 1,
+      "amount": 100,
+      "payee_id": 53,
+      "notes": "Gas is up!",
+      "id": 56
+    }
+  ]
+}

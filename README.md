@@ -11,8 +11,12 @@ This workshop allows you to explore many of the new features that we use on a da
 - Template strings
 - Object and array destructuring and spread
 - The newly added Map/Set data-structures 
-- The new `class` syntax
+- The new `class` syntax (including `static` and `private` member/method declaration and usage)
 - Promises and `async/await`
+- Enhanced literal additoins
+- Proxies
+- Modules
+- Nullish coalescing and optional chaining operator
 
 This workshop uses tests to verify and validate all of your changes, so you can be confident in your changes as you go about refactoring your code to use modern JavaScript language features.
 
@@ -36,22 +40,13 @@ Then simply:
 ```
 
 To ensure that all is well, simply run `npm run test`.
-You should see the following:
+You should see the following at the bottom of your terminal:
 
 ```sh
-❯ npm run test
-
-> refactoring-to-modern-javascript@1.0.0 test /Users/raju/Documents/presentations/2020/refactoring-to-modern-javascript/code/refactoring-to-modern-javascript
-> jest --verbose
-
- PASS  src/000-setup-test/__test__/counter.util.test.js
-  counter: Should increment the passed value
-    ✓ should add 1 (2ms)
-
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
+Test Suites: 4 skipped, 13 passed, 13 of 17 total
+Tests:       28 skipped, 1 todo, 43 passed, 72 total
 Snapshots:   0 total
-Time:        1.59s, estimated 2s
+Time:        2.109 s
 Ran all test suites.
 ```
 
@@ -59,6 +54,6 @@ You are all set!
 
 ## License
 
-Copyright (c) 2020 Raju Gandhi
+Copyright (c) 2022 Raju Gandhi
 
 Distributed under the MIT License
