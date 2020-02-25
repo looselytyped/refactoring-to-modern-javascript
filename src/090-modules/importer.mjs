@@ -1,5 +1,17 @@
-import sayHello from './exporter.mjs';
+import sayHello, {
+  sayGoodbye,
+  bonjour,
+  italianHello as ciao,
+} from './exporter.mjs';
 
-const msg = sayHello('Raju');
-console.log(msg);
+const englishHello = sayHello('Raju');
+console.log(englishHello);
 
+const englishGoodbye = sayGoodbye('Raju');
+console.log(englishGoodbye);
+
+const frenchHello = bonjour('Raju');
+console.log(frenchHello);
+
+const italianHello = ciao('Raju');
+console.log(italianHello);

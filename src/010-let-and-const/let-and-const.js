@@ -1,11 +1,11 @@
-
+/* eslint-disable no-plusplus */
 function simpleRefactor(randomize) {
-  var fruits = ['apples', 'avocado', 'bananas', 'kiwi', 'pomegranate', 'papaya'];
-  var vegetables = ['spinach', 'broccoli', 'kale', 'carrots', 'garlic', 'ginger'];
-  var result = [];
+  const fruits = ['apples', 'avocado', 'bananas', 'kiwi', 'pomegranate', 'papaya'];
+  const vegetables = ['spinach', 'broccoli', 'kale', 'carrots', 'garlic', 'ginger'];
+  const result = [];
 
   // pick two fruits, randomly if asked to
-  for (var i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i++) {
     if (randomize === true) {
       result.push(fruits[Math.floor(Math.random() * Math.floor(6))]);
     } else {
@@ -14,7 +14,7 @@ function simpleRefactor(randomize) {
   }
 
   // pick two vegetables, randomly if asked to
-  for (var i = 0; i < 2; i++) {
+  for (let i = 0; i < 2; i++) {
     if (randomize === true) {
       result.push(vegetables[Math.floor(Math.random() * Math.floor(6))]);
     } else {
@@ -26,15 +26,16 @@ function simpleRefactor(randomize) {
 }
 
 function favoriteFood(animal) {
+  let fav;
   switch (animal) {
     case 'dog':
-      var fav = 'bones';
+      fav = 'bones';
       break;
     case 'cat':
-      var fav = 'fish';
+      fav = 'fish';
       break;
     default:
-      var fav = 'meat';
+      fav = 'meat';
   }
 
   return fav;

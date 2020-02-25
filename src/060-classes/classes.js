@@ -1,3 +1,4 @@
+/* eslint-disable max-len, max-classes-per-file */
 // TODO: Classes
 // Implement an 'Animal' class that is constructed with a `name` and `sound`
 // It should have 3 methods
@@ -20,10 +21,53 @@
 // - toString() - Returns a string that uses Animal's toString with the type — e.g 'Meow! My name is Busha. I am a Maine Coon'
 
 // See the associated tests file
+class Animal {
+  constructor(name, sound) {
+    this.name = name;
+    this.sound = sound;
+  }
 
-class Animal {}
-class Dog {}
-class Cat {}
+  eat() {
+    return `${this.name} is eating`;
+  }
+
+  sleep() {
+    return `${this.name} is sleeping`;
+  }
+
+  toString() {
+    return `${this.sound}! My name is ${this.name}.`;
+  }
+}
+class Dog extends Animal {
+  constructor(name, sound, type) {
+    super(name, sound);
+    this.type = type;
+  }
+
+  bark() {
+    return this.sound;
+  }
+
+  toString() {
+    return `${super.toString()} I am a ${this.type}`;
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, sound, type) {
+    super(name, sound);
+    this.type = type;
+  }
+
+  meow() {
+    return this.sound;
+  }
+
+  toString() {
+    return `${super.toString()} I am a ${this.type}`;
+  }
+}
 
 // Leave the following lines alone :)
 export {

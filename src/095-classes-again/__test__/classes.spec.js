@@ -3,7 +3,7 @@ import {
 } from '../classes';
 
 // TODO: Remove the skip and implement this functionality
-describe.skip('class', () => {
+describe('class', () => {
   describe('superhero class', () => {
     it('should have a static count method', () => {
       expect.assertions(1);

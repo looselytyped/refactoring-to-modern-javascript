@@ -1,59 +1,52 @@
-function createComputedProperty() {
-  var f = 'full';
-  var l = 'Name';
-
-  var person = {
-    first: 'Jane',
-    last: 'Smith',
-  };
-
-  person[f+l] = 'Jane Smith';
-  return person;
-}
-
-function createComputedMethod() {
-  var f = 'full';
-  var l = 'Name';
-
-  var person = {
-    first: 'Jane',
-    last: 'Smith',
-  };
-
-  person[f+l] = function() {
-    return this.first + ' ' + this.last;
-  }
-  return person;
-}
-
-function propertyValueShorthandUsage() {
-  var sum = function(a, b) {
-    return a + b;
-  };
-  var multiply = function(a, b) {
-    return a * b;
-  };
+const createComputedProperty = () => {
+  const f = 'full';
+  const l = 'Name';
 
   return {
-    sum: sum,
-    multiply: multiply,
+    first: 'Jane',
+    last: 'Smith',
+    [f + l]: 'Jane Smith',
   };
-}
+};
 
-function methodDefinitionShorthandUsage() {
+const createComputedMethod = () => {
+  const f = 'full';
+  const l = 'Name';
+
   return {
-    sum: function(a, b) {
+    first: 'Jane',
+    last: 'Smith',
+    [f + l]() {
+      return `${this.first} ${this.last}`;
+    },
+  };
+};
+
+const propertyValueShorthandUsage = () => {
+  const sum = (a, b) => a + b;
+  const multiply = (a, b) => a * b;
+
+  return {
+    sum,
+    multiply,
+  };
+};
+
+/* eslint-disable arrow-body-style */
+const methodDefinitionShorthandUsage = () => {
+  return {
+    sum(a, b) {
       return a + b;
     },
-    multiply: function(a, b) {
+    multiply(a, b) {
       return a * b;
-    }
-  }
-}
+    },
+  };
+};
 
 export {
   createComputedProperty,
   createComputedMethod,
   propertyValueShorthandUsage,
   methodDefinitionShorthandUsage,
-}
+};

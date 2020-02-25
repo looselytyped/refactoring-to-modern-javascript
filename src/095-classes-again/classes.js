@@ -12,6 +12,22 @@
 //   - `wield` yields `Thor strikes with Mjolnir` (Use template strings here)
 
 class SuperHero {
+  static #superHeroCount = 0;
+  #superPower;
+
+  constructor(name, superPower) {
+    this.name = name;
+    this.#superPower = superPower;
+    SuperHero.#superHeroCount++;
+  }
+
+  static count() {
+    return SuperHero.#superHeroCount;
+  }
+
+  wield() {
+    return `${this.name} strikes with ${this.#superPower}`;
+  }
 }
 
 export {

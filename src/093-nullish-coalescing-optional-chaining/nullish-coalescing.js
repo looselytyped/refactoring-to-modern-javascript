@@ -1,25 +1,19 @@
 
-function buyBeer(pack) {
-  var count = pack.count;
-  if(count === null || count === undefined) {
-    return 6;
-  }
-  return count;
+function buyBeer({count}) {
+  return count ?? 6;
 }
 
-function fullName(obj) {
-  var first = obj.firstName;
-  var last = obj.lastName;
-  var prefix = obj.prefix;
-
-  if(prefix === null || prefix === undefined) {
-    prefix = '';
-  }
-
-  return (prefix + " " + first + " " + last).trim();
+function fullName({
+  firstName,
+  lastName,
+  prefix,
+}) {
+  prefix = prefix ?? '';
+  return (prefix + " " + firstName + " " + lastName).trim();
 }
 
 export {
   buyBeer,
   fullName,
 };
+

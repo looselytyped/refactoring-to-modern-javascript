@@ -1,37 +1,34 @@
-
-function printGreeting(name, language) {
-  if (!language) language = 'english';
+const printGreeting = (name, language = 'english') => {
+  let greeting;
   switch (language) {
     case 'french':
-      var greeting = 'Bonjour';
+      greeting = 'Bonjour';
       break;
     case 'spanish':
-      var greeting = 'Hola';
+      greeting = 'Hola';
       break;
     default:
-      var greeting = 'Hello';
+      greeting = 'Hello';
   }
 
-  return greeting.toUpperCase() + "! " + name + ".";
-}
+  return `${greeting.toUpperCase()}! ${name}.`;
+};
 
-function createAngularTemplate(msg) {
-  return '<article class="content">\n' //
-  + '  <section class="section">\n' //
-  + '    <div class="col-md-12">\n' //
-  + '      <div class="card">\n' //
-  + '        <div class="card-block">\n' //
-  + '          <div class="card-title-block">\n' //
-  + '            <h3 class="title">\n' //
-  + '               ' + msg + '\n' //
-  + '            </h3>\n' //
-  + '          </div>\n' //
-  + '        </div>\n' //
-  + '      </div>\n' //
-  + '    </div>\n' //
-  + '  </section>\n' //
-  + '</article>';
-}
+const createAngularTemplate = (msg) => `<article class="content">
+  <section class="section">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-block">
+          <div class="card-title-block">
+            <h3 class="title">
+               ${msg}
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>`;
 
 export {
   printGreeting,

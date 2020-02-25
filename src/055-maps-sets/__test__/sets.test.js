@@ -5,7 +5,7 @@ import {
 } from '../sets';
 
 // TODO: Remove the skip and implement the following
-describe.skip('sets', () => {
+describe('sets', () => {
   it('alphabet: should return a set of alphabets', () => {
     expect.assertions(4);
 

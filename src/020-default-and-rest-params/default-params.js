@@ -1,24 +1,19 @@
-
-function rectangleArea(x, y) {
-  if (!x) x = 10;
-  if (!y) y = x;
-
+/* eslint-disable no-restricted-syntax, prefer-arrow-callback */
+function rectangleArea(x = 10, y = x) {
   return x * y;
 }
 
-function validTriangle(a, b) {
-  if (!a) a = 10;
-  if (!b) b = a;
-  var c = +Math.hypot(a, b).toFixed(2);
+function validTriangle(a = 10, b = a) {
+  const c = +Math.hypot(a, b).toFixed(2);
 
   return [a, b, c];
 }
 
-function appendToArray(value, arr) {
-  if (!arr) arr = [];
+function appendToArray(value, arr = []) {
   arr.push(value);
   return arr;
 }
+
 
 export {
   rectangleArea,

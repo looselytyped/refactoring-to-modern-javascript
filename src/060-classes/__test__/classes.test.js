@@ -5,7 +5,7 @@ import {
 } from '../classes';
 
 // TODO: Remove the skip and implement this functionality
-describe.skip('class', () => {
+describe('class', () => {
   describe('animal', () => {
     it('should be truthy', () => {
       expect.assertions(1);
