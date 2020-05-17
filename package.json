@@ -4,7 +4,6 @@
   "main": "index.js",
   "author": "Raju Gandhi <raju.gandhi@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "lint": "eslint \"**/*.js\" \"**/*.test.js\"",
     "test": "jest --verbose",
